@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>challenge1</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <header class="logo">
+        <img src="photo/logo.png" alt="logo">
+    </header>
+
+
+    <main class="container">
+        <section class="left">
+            <div class="register">
+                <h1>Register form</h1>
+                <form action="#">
+                        <input type="text" placeholder="Username" required>
+                        <input type="password" placeholder="Password" required>
+                        <input type="password" placeholder="Confirm Password" required>
+                        <input type="email" placeholder="Email" required>
+                        <input list="location" placeholder="Location" name="location">
+                        <datalist id="location">
+                            <option>Warszawa</option>
+                            <option>Szczecin</option>
+                            <option>Kraków</option>
+                        </datalist>
+                </form>
+                <div>
+                    <label><input type="radio" name="acceptTerms">I have read and accept the terms of use.</label>
+                    <button type="submit" name="submit">Sign in</button>
+                </div>
+            </div>
+
+
+            <h1>Send Email</h1>
+            <div class="send-email">
+                <form action="#">
+                    <div>
+                    <input type="text" name="name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea type="text" name="message" maxlength="400" placeholder="Type your message..."></textarea>
+                    </div>
+                    <input type="checkbox">Send a copy to my Email
+                    <button type="submit">Send Email</button>
+
+                </form>
+            </div>
+        </section>
+
+
+        <section class="right">
+            <h1>Sign In Form</h1>
+            <div class="sign-in">
+                <form action="#">
+                    <input type="text" name="username" placeholder="Username" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                </form>
+
+                <div>
+                    <label><input type="radio" name="rememberMe">Remember me</label>
+                    <button type="submit" name="submit">Sign in</button>
+                </div>
+            </div>
+
+
+            <h1>Recover Form</h1>
+            <div class="recover-form">
+                <form action="#">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="number" name="phoneNumber" placeholder="Enter your Phone number" required>
+                </form>
+
+                <div>
+                    <button type="submit" name="send">Send</button>
+                    <button type="submit" name="reset">Done</button>
+                </div>
+            </div>
+
+
+            <h1>Subscribe Form</h1>
+            <div class="subscribe-form"></div>
+                <form action="#">
+                    <input type="email" name="email" placeholder="Enter your Email">
+                </form>
+
+                <div>
+                    <button type="submit">Subscribe</button>
+                    <button type="submit">No, thanks</button>
+                </div>
+
+
+            <img src="photo/logo-below.png">
+        </section>
+
+
+
+    </main>
+
+</body>
+</html>
