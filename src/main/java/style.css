@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"TitilliumText22L Lt", sans-serif;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    height: 111px;
+    left: 50px;
+    margin-top: 50px;
+    filter: drop-shadow(2px 3px 2px rgba(20, 20, 20, 1)) opacity(30%);
+}
+
+img {
+    /*display: block;*/
+   /* margin: 60px auto 25px auto;*/
+    opacity: 30%;
+}
+
+body {
+    background-image: url("photo/background@x2.png");
+    background-size: cover;
+}
+
+main {
+    max-width: 1050px;
+    display: flex;
+    justify-content: space-around;
+    margin: 25px auto;
+}
+
+.container {
+    display: flex;
+    min-height: 1372px;
+    flex-flow: row wrap;
+}
+
+h1 {
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 20px;
+}
+
+
+.window {
+    background: #F4F4F4;
+    font-size: 16px;
+    width: 420px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 0px 24px rgba(0,0,0,0.26);
+    vertical-align: center;
+}
+
+
+.input-line {
+    display: flex;
+    height: 39px;
+    width: 338px;
+}
+
+.button-left {
+    color: #FFFFFF;
+    background-color: #3A9A00;
+    font-size: 24px;
+    padding: 8px;
+    width: 339px;
+    text-align: center;
+    position: center;
+}
+
+.button-right {
+    color: #FFFFFF;
+    background-color: #3A9A00;
+    font-size: 24px;
+    padding: 8px;
+    width: 139px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+}
+
+.button-right-done {
+    background-color: #90CA6D;
+    color: #FFFFFF;
+    width: 139px;
+    font-size: 18px;
+    padding: 11px;
+
+}
+
+
+.button-right-no {
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #A2202A;
+    width: 139px;
+    padding: 11px;
+
+}
+
+
+
