@@ -15,13 +15,17 @@
 }
 
 img {
-    /*display: block;*/
-   /* margin: 60px auto 25px auto;*/
+    display: block;
+    margin: 60px auto 25px auto;
     opacity: 30%;
 }
 
+section img {
+    width: 60%;
+}
+
 body {
-    background-image: url("photo/background@x2.png");
+    background-image: url("photo/background.png");
     background-size: cover;
 }
 
@@ -55,56 +59,179 @@ h1 {
     margin: 20px;
     padding: 20px;
     border-radius: 3px;
-    -webkit-box-shadow: 0px 0px 0px 24px rgba(0,0,0,0.26);
+    -webkit-box-shadow: 0 0 0 24px rgba(0,0,0,0.26);
+    -moz-box-shadow: 0 0 0 24px rgba(0,0,0,0.26);
+    box-shadow: 0 0 0 24px rgba(0,0,0,0.26);
     vertical-align: center;
 }
 
 
 .input-line {
-    display: flex;
-    height: 39px;
-    width: 338px;
+    display:flex;
+    padding-right:10px;
+    height:39px;
+    width:100%;
+    margin:23px 0;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
 }
+
+.input-line input{
+    flex:1;
+    height:75%;
+    font-size:17px;
+    background: #f7f7f7;
+    padding:0 20px;
+    margin-top:5px;
+    border:none;
+    border-left:1px solid #e4e4e4;
+}
+
+.input-line datalist {
+    flex:1;
+    height:75%;
+    border:none;
+    background: #f4f4f4;
+    padding:0 15px;
+    margin-top:5px;
+    font-size:17px;
+    border-left:1px solid #ddd;
+    cursor: pointer;
+}
+
+
+.input-checkbox {
+    margin-top:20px;
+    color: #222;
+    font-size:17px;
+    cursor: pointer;
+    position:relative;
+    top:-5px;
+}
+
+
+input[type="checkbox"] {
+    position: relative;
+    display:inline-block;
+    padding:11px;
+    margin:5px 9px 0 0;
+    border: 1px solid #c7c7c7;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+input[type="checkbox"]:checked:after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: hsla(82, 66%, 49%, 1);
+    border-radius: 3px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input[type="checkbox"]:focus {
+    background: #fff;
+    border: 1px solid #aaa;
+    -webkit-box-shadow: 0px 0px 5px 0.3px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 0px 5px 0.3px rgba(0,0,0,0.35);
+    box-shadow: 0px 0px 5px 0.3px rgba(0,0,0,0.35);
+}
+
+input[type="submit"] {
+    width:100%;
+    height:50px;
+    color:white;
+    font-size:26px;
+    border:1px solid #3A9A00;
+    border-radius: 5px;
+    background-color: #93D02B;
+    text-shadow: 1px 1px 1px red;
+    cursor:pointer;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(rgb(129,195,33),rgb(162,215,63) );
+}
+input[type="submit"]:focus {
+    background: linear-gradient(rgb(105,181,9),rgb(138,201,39) );
+}
+
 
 .button-left {
     color: #FFFFFF;
-    background-color: #3A9A00;
+    background-color: #93D02B;
     font-size: 24px;
     padding: 8px;
-    width: 339px;
+    width: 100%;
     text-align: center;
     position: center;
+    cursor: pointer;
 }
 
 .button-right {
     color: #FFFFFF;
-    background-color: #3A9A00;
+    background-color: #93D02B;
     font-size: 24px;
     padding: 8px;
-    width: 139px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.buttons {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    align-items: baseline;
+    text-align: center;
+    position: center;
+    color: white;
+
 
 }
 
-.button-right-done {
+.buttons .input-checkbox {
+    flex-basis: 150%;
+}
+
+input[name="done"] {
     background-color: #90CA6D;
     color: #FFFFFF;
     width: 139px;
     font-size: 18px;
     padding: 11px;
-
 }
 
 
-.button-right-no {
+input[name="reject"] {
     font-size: 18px;
     color: #FFFFFF;
     background-color: #A2202A;
     width: 139px;
     padding: 11px;
+}
 
+.input-message textarea {
+    resize:none;
+    height:190px;
+    padding:10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #cfcfcf;
+    font-size: 17px;
+    background: #f7f7f7;
+}
+
+textarea:focus {
+    background:#fff !important;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.45);
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.45);
 }
 
 
