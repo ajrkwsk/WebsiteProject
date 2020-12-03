@@ -8,20 +8,35 @@
 .logo {
     display: flex;
     justify-content: center;
-    height: 111px;
     left: 50px;
     margin-top: 50px;
     filter: drop-shadow(2px 3px 2px rgba(20, 20, 20, 1)) opacity(30%);
 }
 
-img {
-    display: block;
-    margin: 60px auto 25px auto;
-    opacity: 30%;
+
+footer {
+    -webkit-filter: drop-shadow(2px 3px 2px rgba(20, 20, 20, 1));
+    filter: drop-shadow(2px 3px 2px rgba(20, 20, 20, 1));
+    height: 130px;
+    width: 353px;
+    mix-blend-mode: overlay;
 }
 
 section img {
-    width: 60%;
+    padding: 10px;
+    margin-top: -2px;
+}
+
+
+select {
+    flex:1;
+    border:none;
+    background: #f4f4f4;
+    padding: 0 15px;
+    margin-top:5px;
+    font-size:17px;
+    border-left:1px solid #ddd;
+    cursor: pointer;
 }
 
 body {
@@ -49,6 +64,7 @@ h1 {
     text-align: center;
     text-shadow: 2px 2px 2px black;
     margin-bottom: 20px;
+    padding: 20px;
 }
 
 
@@ -86,19 +102,6 @@ h1 {
     border:none;
     border-left:1px solid #e4e4e4;
 }
-
-.input-line datalist {
-    flex:1;
-    height:75%;
-    border:none;
-    background: #f4f4f4;
-    padding:0 15px;
-    margin-top:5px;
-    font-size:17px;
-    border-left:1px solid #ddd;
-    cursor: pointer;
-}
-
 
 .input-checkbox {
     margin-top:20px;
@@ -151,7 +154,7 @@ input[type="submit"] {
     border:1px solid #3A9A00;
     border-radius: 5px;
     background-color: #93D02B;
-    text-shadow: 1px 1px 1px red;
+    text-shadow: 1px 1px 1px white;
     cursor:pointer;
 }
 
@@ -184,15 +187,18 @@ input[type="submit"]:focus {
 }
 
 .buttons {
+    color: #FFFFFF;
+    background-color: #93D02B;
+    padding: 8px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 24px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: baseline;
     text-align: center;
     position: center;
-    color: white;
-
-
 }
 
 .buttons .input-checkbox {
