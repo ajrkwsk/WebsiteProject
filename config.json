@@ -1,0 +1,40 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "fd3128bf109153952b1b775ea574504b",
+      "css": "user-1",
+      "code": 59394,
+      "src": "websymbols"
+    },
+    {
+      "uid": "e335adbc2d898c7d85d40c507796e7b4",
+      "css": "mail",
+      "code": 9993,
+      "src": "entypo"
+    },
+    {
+      "uid": "4x5p6fnblkhqsj4ibuc724faotghuiaq",
+      "css": "lock-filled",
+      "code": 57495,
+      "src": "typicons"
+    },
+    {
+      "uid": "raxalm7kdj5at9v49bevw6r2cw7fdv9r",
+      "css": "mobile-alt",
+      "code": 59312,
+      "src": "modernpics"
+    },
+    {
+      "uid": "291e2e127efe7a6bc580af6d3ead3771",
+      "css": "location",
+      "code": 61489,
+      "src": "mfglabs"
+    }
+  ]
+}
