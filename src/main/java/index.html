@@ -10,150 +10,147 @@
 
 <body>
 
-    <header class="logo">
-        <img src="photo/logo.png" alt="logo">
-    </header>
+<header class="logo">
+    <img src="photo/logo.png" alt="logo">
+</header>
 
 
-    <main class="container">
-        <section class="left">
+<main class="container">
+    <section class="left">
 
-
-            <!--REGISTER-->
-            <h1>Register form</h1>
-            <div class="window">
-                <form action="#">
-                    <div class="input-line">
-                        <label for="userName"><img src="fontello/icon-user.png" alt="icon user"></label>
-                        <input type="text" name="userName" id="userName" placeholder="Username" required><br>
-                    </div>
-                    <div class="input-line">
-                        <label for="password"><img src="fontello/icon-lock.png" alt="icon lock"></label>
-                        <input type="password" name="password" id="password" placeholder="Password" required><br>
-                    </div>
-                    <div class="input-line">
-                        <label for="confirm"><img src="fontello/icon-lock.png" alt="icon lock"></label>
-                        <input type="password" name="confirm" id="confirm" placeholder="Confirm Password" required><br>
-                    </div>
-                    <div class="input-line">
-                        <label for="email"><img src="fontello/icon-email.png" alt="icon email"></label>
-                        <input type="email" name="email" id="email" placeholder="Email" required><br>
-                    </div>
-                    <div class="input-line">
-                        <label for="location"><img src="fontello/icon-maps.png" alt="icon maps"></label>
-                        <input list="location" id="location" name="location" placeholder="Location" required>
-                        <datalist>
-                            <option>Warszawa</option>
-                            <option>Szczecin</option>
-                            <option>Kraków</option>
-                        </datalist>
-                    </div>
-                </form>
-                <div class="input-checkbox">
-                    <label for="sign"><input type="checkbox" name="acceptTerms" checked>I have read and accept the terms of use.</label><br>
-                    <button class="button-left" type="submit" name="submit" id="sign">Sign in</button>
+        <!--REGISTER-->
+        <h1>Register form</h1>
+        <div class="window">
+            <form action="#">
+                <div class="input-line">
+                    <label for="userName"><img src="fontello/icon-user.png" alt="icon user"></label>
+                    <input type="text" name="userName" id="userName" placeholder="Username" required><br>
                 </div>
+                <div class="input-line">
+                    <label for="password"><img src="fontello/icon-lock.png" alt="icon lock"></label>
+                    <input type="password" name="password" id="password" placeholder="Password" required><br>
+                </div>
+                <div class="input-line">
+                    <label for="confirm"><img src="fontello/icon-lock.png" alt="icon lock"></label>
+                    <input type="password" name="confirm" id="confirm" placeholder="Confirm Password" required><br>
+                </div>
+                <div class="input-line">
+                    <label for="email"><img src="fontello/icon-email.png" alt="icon email"></label>
+                    <input type="email" name="email" id="email" placeholder="Email" required><br>
+                </div>
+                <div class="input-line">
+                    <label for="location"><img src="fontello/icon-maps.png" alt="icon maps"></label>
+                    <select id="location" name="location" required>
+                        <option value disabled selected>Your Location</option>
+                        <option value="Warszawa">Warszawa</option>
+                        <option value="Szczecin">Szczecin</option>
+                        <option value="Kraków">Kraków</option>
+                    </select>
+                </div>
+            </form>
+            <div class="input-checkbox">
+                <label for="sign"><input type="checkbox" name="acceptTerms">I have read and accept the terms of
+                    use.</label><br>
+                <button class="button-left" type="submit" name="submit" id="sign">Sign in</button>
             </div>
+        </div>
+
+        <!--SEND EMAIL-->
+        <h1>Send Email</h1>
+        <div class="window">
+            <form action="#">
+                <div class="input-line">
+                    <label for="name"><img src="fontello/icon-user.png" alt="icon user"></label>
+                    <input type="text" name="name" id="name" placeholder="Your name" required><br>
+                </div>
+                <div class="input-line">
+                    <label for="email2"><img src="fontello/icon-email.png" alt="icon email"></label>
+                    <input type="email" name="email2" id="email2" placeholder="Your Email" required>
+                </div>
+                <div class="input-message">
+                    <label for="message"></label>
+                    <textarea name="message" id="message" rows="7" cols="44"
+                              placeholder="Type your message..."></textarea>
+                </div>
+                <div class="input-checkbox">
+                    <label for="copy"></label>
+                    <input type="checkbox" name="copy" id="copy">Send a copy to my Email<br>
+                </div>
+                <div>
+                    <button class="button-left" name="sendEmail" type="submit">Send Email</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!--SIGN IN FORM-->
+    <section class="right">
+        <h1>Sign In Form</h1>
+        <div class="window">
+            <form action="#">
+                <div class="input-line">
+                    <label for="userName2"><img src="fontello/icon-user.png" alt="icon user"></label>
+                    <input type="text" name="username2" id="userName2" placeholder="Username" required>
+                </div>
+                <div class="input-line">
+                    <label for="password2"><img src="fontello/icon-lock.png" alt="icon lock"></label>
+                    <input type="password" name="password2" id="password2" placeholder="Password" required>
+                </div>
+                    <td colspan="2">
+                        <label for="rememberMe"><input type="checkbox" name="rememberMe" id="rememberMe"
+                                                       class="input-checkbox">Remember me</label>
+                        <button type="submit" name="submit2" class="button-right">Sign in</button>
+                    </td>
+            </form>
+        </div>
 
 
-            <h1>Send Email</h1>
-            <div class="window">
-                <form action="#">
-                    <div class="input-line">
-                        <label for="name"><img src="fontello/icon-user.png" alt="icon user"></label>
-                        <input type="text" name="name" id="name" placeholder="Your name" required><br>
-                    </div>
-                    <div class="input-line">
-                        <label for="email2"><img src="fontello/icon-email.png" alt="icon email"></label>
-                        <input type="email" name="email2" id="email2" placeholder="Your Email" required>
-                    </div>
-                    <div class="input-message">
-                        <label for="message"></label>
-                        <textarea name="message" id="message" rows="7" cols="44" placeholder="Type your message..."></textarea>
-                    </div>
-                    <div class="input-checkbox">
-                        <label for="copy"></label>
-                        <input type="checkbox" name="copy" id="copy" checked>Send a copy to my Email<br>
-                    </div>
-                    <div>
-                        <button class="button-left" name="send" type="submit">Send Email</button>
-                    </div>
-                </form>
-            </div>
-        </section>
+        <!--RECOVER FORM-->
+        <h1>Recover Form</h1>
+        <div class="window">
+            <form action="#">
+                <div class="input-line">
+                    <label for="email3"><img src="fontello/icon-email.png" alt="icon=email"></label>
+                    <input type="email" name="email3" id="email3" placeholder="Your Email" required>
+                </div>
+                <div class="input-line">
+                    <label for="phoneNumber"><img src="fontello/icon-phone.png" alt="icon phone"></label>
+                    <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Enter your Phone number"
+                           required>
+                </div>
+                <div class="button-right">
+                    <button type="submit" name="send">Send</button>
+                </div>
+                <div class="button-right">
+                    <button type="submit" name="done">Done</button>
+                </div>
+            </form>
+        </div>
 
 
-        <section class="right">
-            <h1>Sign In Form</h1>
-            <div class="window">
-                <form action="#">
-                    <div class="input-line">
-                        <label for="userName2"><img src="fontello/icon-user.png" alt="icon user"></label>
-                         <input type="text" name="username2" id="userName2" placeholder="Username" required>
-                    </div>
-                    <div class="input-line">
-                        <label for="password2"><img src="fontello/icon-lock.png" alt="icon lock"></label>
-                        <input type="password" name="password2" id="password2" placeholder="Password" required>
-                    </div>
-                    <div class="buttons">
-                        <div class="input-checkbox">
-                            <label for="rememberMe"></label>
-                            <input type="checkbox" name="rememberMe" id="rememberMe" checked>Remember me
-                        </div>
-                        <div class="button-right">
-                            <button type="submit" name="submit">Sign in</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
+        <!--SUBSCRIBE FORM-->
+        <h1>Subscribe Form</h1>
+        <div class="window">
+            <form action="#">
+                <div class="input-line">
+                    <label for="email4"><img src="fontello/icon-email.png" alt="icon email"></label>
+                    <input type="email" name="email4" id="email4" placeholder="Enter your Email">
+                </div>
+                <div class="button-right">
+                    <button type="submit" name="subscribe">Subscribe</button>
+                </div>
+                <div class="button-right">
+                    <button type="submit" name="reject">No, thanks</button>
+                </div>
+            </form>
+        </div>
 
 
-            <h1>Recover Form</h1>
-            <div class="window">
-                <form action="#">
-                    <div class="input-line">
-                        <label for="email3"><img src="fontello/icon-email.png" alt="icon=email"></label>
-                        <input type="email" name="email3" id="email3" placeholder="Your Email" required>
-                    </div>
-                    <div class="input-line">
-                        <label for="phoneNumber"><img src="fontello/icon-phone.png" alt="icon phone"></label>
-                        <input type="number" name="phoneNumber" id="phoneNumber" placeholder="Enter your Phone number" required>
-                    </div>
-                    <div class="buttons">
-                        <div class="button-right">
-                            <button type="submit" name="send">Send</button>
-                        </div>
-                        <div class="button-right">
-                            <button type="submit" name="done">Done</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-
-            <h1>Subscribe Form</h1>
-            <div class="window">
-                <form action="#">
-                    <div class="input-line">
-                        <label for="email4"><img src="fontello/icon-email.png" alt="icon email"></label>
-                        <input type="email" name="email4" id="email4" placeholder="Enter your Email" required>
-                    </div>
-                    <div class="buttons">
-                        <div class="button-right">
-                            <button type="submit" name="subscribe">Subscribe</button>
-                        </div>
-                        <div class="button-right">
-                            <button type="submit" name="reject">No, thanks</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-            <div class="footer">
-                <img src="photo/logo-below.png" alt="logo at the end of the page">
-            </div>
-        </section>
-    </main>
+        <div class="footer">
+            <img src="photo/logo-below.png" alt="logo at the end of the page">
+        </div>
+    </section>
+</main>
 
 </body>
 </html>
